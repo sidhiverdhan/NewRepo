@@ -1,4 +1,4 @@
-package ca.rpra.automation;
+package ca.rpra.automation.page;
 
 
 
@@ -9,8 +9,6 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import ca.rpra.automation.page.LoginPage;
-import ca.rpra.automation.page.ManifestPage;
 import ca.rpra.automation.utils.ReadProperties;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;

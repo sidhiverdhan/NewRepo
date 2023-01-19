@@ -2,6 +2,7 @@ package ca.rpra.automation;
 
 import java.util.concurrent.TimeUnit;
 
+import ca.rpra.automation.page.BaseTest;
 import ca.rpra.automation.page.LoginPage;
 import ca.rpra.automation.page.ManifestPage;
 import org.testng.annotations.Test;

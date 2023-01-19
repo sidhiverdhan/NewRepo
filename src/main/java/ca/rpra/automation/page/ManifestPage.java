@@ -13,7 +13,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.appium.java_client.ios.IOSDriver;
 
-public class ManifestPage {
+public class ManifestPage extends BasePage{
 	
 	private WebDriver driver;
 	
@@ -159,32 +159,7 @@ public class ManifestPage {
 		this.driver=driver2;
 		
 	}
-	
-	public void waitForVisible(WebElement ele, int time) {
-		Duration dur = Duration.ofSeconds(time);
-		WebDriverWait wait = new WebDriverWait(driver, dur);
-		wait.until(ExpectedConditions.visibilityOf(ele));
-		
-	}
-	
-	public void waitForClickable(WebElement ele, int time) {
-		Duration dur = Duration.ofSeconds(time);
-		WebDriverWait wait = new WebDriverWait(driver, dur);
-		wait.until(ExpectedConditions.elementToBeClickable(ele));
-		
-	}
-	
-	public void sendKeysCustom(WebElement ele, String text) {
-		waitForVisible(ele, 5);
-		ele.sendKeys(text);
-		
-	}
-	
-	public void clickCustom(WebElement ele) {
-		waitForClickable(ele, 10);
-		ele.click();
-		
-	}
+
 	
 	public void createManifest() {
 		
