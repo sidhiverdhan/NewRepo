@@ -2,9 +2,10 @@ package ca.rpra.automation;
 
 import java.util.concurrent.TimeUnit;
 
-import ca.rpra.automation.page.BaseTest;
 import ca.rpra.automation.page.LoginPage;
 import ca.rpra.automation.page.ManifestPage;
+import ca.rpra.automation.utils.BaseTest;
+
 import org.testng.annotations.Test;
 
 public class TestCaseOne extends BaseTest{
@@ -18,7 +19,7 @@ public class TestCaseOne extends BaseTest{
 			//driver.resetApp();
 		LoginPage loginPage = new LoginPage(getDriver());
 
-		//loginPage.loginDetails();
+		loginPage.loginDetails();
 		
 		ManifestPage manifestPage= new ManifestPage(getDriver());
 		

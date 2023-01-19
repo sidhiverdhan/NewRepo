@@ -1,4 +1,4 @@
-package ca.rpra.automation.page;
+package ca.rpra.automation.utils;
 
 
 
@@ -8,8 +8,6 @@ import java.util.concurrent.TimeUnit;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
-import ca.rpra.automation.utils.ReadProperties;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;

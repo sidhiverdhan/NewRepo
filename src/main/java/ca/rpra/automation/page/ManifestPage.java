@@ -11,6 +11,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import ca.rpra.automation.utils.BasePage;
 import io.appium.java_client.ios.IOSDriver;
 
 public class ManifestPage extends BasePage{

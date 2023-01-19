@@ -1,4 +1,4 @@
-package ca.rpra.automation.page;
+package ca.rpra.automation.utils;
 
 import java.time.Duration;
 
@@ -8,18 +8,13 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class BasePage {
+public class BasePage extends BaseTest {
 	WebDriver driver;
 	
-	public BasePage(WebDriver driver2) {
-		this.driver=driver2;
-		
-		PageFactory.initElements(this.driver, this);
-	}
 	
 	public BasePage() {
+		this.driver= getDriver();
 				
-		PageFactory.initElements(this.driver, this);
 	}
 	public void waitForVisible(WebElement ele, int time) {
 		Duration dur = Duration.ofSeconds(time);
