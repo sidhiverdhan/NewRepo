@@ -19,7 +19,7 @@ public class TestCaseOne extends BaseTest{
 			//driver.resetApp();
 		LoginPage loginPage = new LoginPage(getDriver());
 
-		loginPage.loginDetails();
+		loginPage.loginDetails("jose.bingham@jyplo.com","James@rick1");
 		
 		ManifestPage manifestPage= new ManifestPage(getDriver());
 		

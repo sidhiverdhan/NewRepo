@@ -17,6 +17,7 @@ import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 public class LoginPage extends BasePage{
 
+
 	@FindBy(xpath="//XCUIElementTypeTextField")
 	private WebElement user_name;
 
@@ -29,14 +30,15 @@ public class LoginPage extends BasePage{
 	 private WebElement signIn;
 	
 	public LoginPage(WebDriver driver) {
-		
-	
+
 		PageFactory.initElements(driver, this);
+		super.setDriver(driver);
 		
 	}
 	
-	public void loginDetails() {
-		
+	public void loginDetails(String username,String pwd) {
+
+		waitForVisible(user_name,10);
 		sendKeysCustom(user_name,"jose");
 		user_name.sendKeys("jose");
 		user_name.clear();

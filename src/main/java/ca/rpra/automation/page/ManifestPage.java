@@ -158,6 +158,7 @@ public class ManifestPage extends BasePage{
 	public ManifestPage(WebDriver driver2) {
 		PageFactory.initElements(driver2, this);
 		this.driver=driver2;
+		super.setDriver(driver);
 		
 	}
 
