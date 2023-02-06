@@ -36,7 +36,12 @@ capabilities.setCapability("automationName",rp.getValue("automationName"));
 capabilities.setCapability("bundleId", rp.getValue("bundleId"));
 capabilities.setCapability("xcodeOrgId", rp.getValue("xcodeOrgId"));
 capabilities.setCapability("xcodeSigningId", rp.getValue("xcodeSigningId"));
-
+capabilities.setCapability("iosInstallPause", "8000");
+capabilities.setCapability("wdaStartupRetries", "4");
+capabilities.setCapability("wdaStartupRetryInterval", "20000");
+capabilities.setCapability("waitForIdleTimeout","0");
+capabilities.setCapability("sendKeyStrategy", "grouped");
+capabilities.setCapability("waitForQuiescence",false);
 
 setDriver(new RemoteWebDriver(new URL(rp.getValue("huburl")), capabilities));
 }
